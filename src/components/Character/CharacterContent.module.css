@@ -1,0 +1,62 @@
+.photo {
+    margin: auto;
+    border-radius: 0.5rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 20rem 20rem;
+    grid-template-rows: auto 1fr auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    opacity: 0;
+    transform: scale(.8);
+    animation: scaleUp .3s forwards;
+    height: 20rem;
+}
+
+@keyframes scaleUp {
+    to {
+        opacity: initial;
+        transform: initial;
+    }
+}
+
+.details {
+    padding: 2rem 2rem 0rem 2rem;
+    text-align: left;
+    padding-bottom: 1rem;
+    overflow-y: auto;
+}
+
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+}
+
+.img {
+    width: 100%;
+    border-radius: 0.4rem 0rem 0rem 0.4rem;
+}
+
+.name {
+    color: var(--primary-orange);
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.villageAndRank{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width:650px) {
+    .photo {
+        display: block;
+        overflow-y: auto;
+        height: fit-content;
+        width: 300px;
+    }
+}

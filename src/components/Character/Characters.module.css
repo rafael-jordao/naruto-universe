@@ -1,0 +1,65 @@
+.character {
+    background-color: #eee;
+    height: 100%;
+    border-radius: 0.4rem;
+    box-shadow: 5px 10px 30px #003571;
+    transition: 0.3s;
+    text-align: left;
+    cursor: pointer;
+    transform: scale(.8);
+    animation: scaleUp .3s forwards;
+ 
+}
+
+@keyframes scaleUp {
+    to {
+        opacity: initial;
+        transform: initial;
+    }
+}
+
+.character:hover {
+    transform: scale(102%);
+}
+
+.charImage {
+    width: 100%;
+    border-radius: 0.4rem 0.4rem 0rem 0rem;
+}
+
+
+.scroll {
+    overflow-y: scroll;
+}
+
+.name {
+    color: var(--primary-orange);
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--primary-black);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+
+    .characterContainer {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        height: 10rem;
+    }
+
+    .character {
+        margin-bottom: 5rem;
+    }
+
+}

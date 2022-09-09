@@ -1,0 +1,31 @@
+.footer {
+    background-color: var(--primary-orange);
+    color: var(--off-white);
+    padding: 3rem;
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    max-width: 150px;
+}
+
+.subheading {
+    padding: 1rem;
+}
+
+
+.span {
+    font-size: 0.8em;
+    color: var(--primary-yellow);
+}
+
+.a {
+    color: var(--primary-yellow);
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+.a:hover {
+    opacity: 0.8;
+}

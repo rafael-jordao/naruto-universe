@@ -1,0 +1,97 @@
+.firstFold {
+    background-color: var(--primary-blue);
+    padding-top: 1rem;
+    text-align: center;
+    min-height: 100vh;
+}
+
+@keyframes scaleUp {
+    to {
+        opacity: initial;
+        transform: initial;
+    }
+}
+
+.ButtonPrevious {
+    transition: 0.2s;
+}
+
+.ButtonPrevious:hover {
+    transform: translateX(15px);
+}
+
+.buttonPass {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-yellow);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: solid;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.buttonPass:hover {
+    opacity: 0.8;
+}
+
+
+.lastPage{
+    position: absolute;
+    margin: 0 auto;
+    max-width: 150px;
+    width: 100%;
+    left: 30%;
+    right: 30%;
+    font-size: 0.7rem;
+    color: var(--primary-orange);
+    background-color: var(--off-white);
+    padding: 0.2rem;
+    opacity: 0;
+    transition: 0.3s;
+    transform: scale(.8);
+    animation: scaleUp .3s forwards;
+    border-radius: 0.4rem;
+ 
+}
+
+.buttonsContainer {
+   width: 100%;
+   max-width: 400px;
+   margin: 0 auto;
+   justify-content: space-around;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 2rem;
+   padding-top: 4rem;
+}
+
+
+.characterContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    grid-gap: 3rem;
+}
+
+
+.heading {
+    color: var(--off-white);
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .characterContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+        grid-gap: 3rem;
+    }
+}

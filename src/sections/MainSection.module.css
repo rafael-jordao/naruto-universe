@@ -1,0 +1,22 @@
+.heading {
+    color: var(--primary-orange);
+    font-size: 3rem;
+    line-height: 1;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+.subHeading {
+    color: var(--primary-black);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+.naruto {
+    width: 100%;
+    max-width: 500px;
+}

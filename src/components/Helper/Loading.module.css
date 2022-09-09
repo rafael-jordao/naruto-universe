@@ -1,0 +1,5 @@
+.loading {
+    color: var(--off-white);
+    padding: 3rem;
+    position: fixed;
+}

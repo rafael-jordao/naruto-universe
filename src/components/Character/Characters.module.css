@@ -11,15 +11,23 @@
  
 }
 
+.divHover{
+    transition: 0.2s;
+}
+
+.divHover:hover{
+    scale: 102%;
+}
+
+.character:hover {
+    opacity: 0.8;
+}
+
 @keyframes scaleUp {
     to {
         opacity: initial;
         transform: initial;
     }
-}
-
-.character:hover {
-    transform: scale(102%);
 }
 
 .charImage {

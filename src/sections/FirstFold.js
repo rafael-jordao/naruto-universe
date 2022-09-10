@@ -2,9 +2,7 @@ import React from 'react'
 import styles from './FirstFold.module.css'
 import CharactersFeed from '../components/Character/CharactersFeed'
 import CharacterModal from '../components/Character/CharacterModal'
-// import Form from '../components/Form/Form.js'
-import Villages from '../components/Villages'
-import { GET_ALL_CHARACTERS } from '../Api'
+
 
 export const FirstFold = () => {
     const [modal, setModal] = React.useState(null);

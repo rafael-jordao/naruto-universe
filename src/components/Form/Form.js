@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Form.module.css'
 
-const Form = ({ handleSubmit, handleChange, placeHolder, textButton, label, value }) => {
+const Form = ({ handleSubmit, handleChange, placeHolder, label, value }) => {
 
     return (
         <div className={styles.formContainer}>
@@ -14,7 +14,7 @@ const Form = ({ handleSubmit, handleChange, placeHolder, textButton, label, valu
                     placeholder={placeHolder}
                     onChange={handleChange}
                     value={value} type='text' />
-                <button className={styles.button}>{textButton}</button>
+                {/* <button className={styles.button}>{textButton}</button> */}
             </form>
         </div>
     )
